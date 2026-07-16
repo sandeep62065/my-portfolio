@@ -66,35 +66,48 @@ const About = () => {
             transition={{ delay: 0.2 }}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}
           >
-            {/* Hexagonal Profile Frame */}
-            <div style={{ position: 'relative', width: '220px', height: '220px' }}>
-              {/* Rotating border */}
+            {/* Circular Profile Frame */}
+            <div style={{ position: 'relative', width: '280px', height: '280px' }}>
+              {/* Outer pulsing glow */}
+              <motion.div
+                animate={{ rotate: 360, scale: [1, 1.08, 1] }}
+                transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
+                style={{
+                  position: 'absolute', inset: '-20px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, rgba(16,185,129,0.4), rgba(6,182,212,0.2), rgba(16,185,129,0.4))',
+                  filter: 'blur(15px)',
+                  zIndex: 0,
+                }}
+              />
+              {/* Rotating border 1 */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
                 style={{
                   position: 'absolute', inset: '-6px',
-                  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                  borderRadius: '50%',
                   background: 'linear-gradient(135deg, #10B981, #06B6D4, #10B981)',
                   zIndex: 0,
                 }}
               />
+              {/* Rotating border 2 with scale pulse */}
               <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
+                animate={{ rotate: -360, scale: [1, 1.03, 1] }}
+                transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
                 style={{
                   position: 'absolute', inset: '-12px',
-                  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-                  background: 'linear-gradient(135deg, rgba(16,185,129,0.3), rgba(6,182,212,0.15), rgba(16,185,129,0.3))',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, rgba(16,185,129,0.5), rgba(6,182,212,0.3), rgba(16,185,129,0.5))',
                   zIndex: 0,
                 }}
               />
               {/* Actual image area */}
               <div
-                className="hexagon"
                 style={{
                   position: 'relative', zIndex: 1,
                   width: '100%', height: '100%',
+                  borderRadius: '50%',
                   background: 'linear-gradient(135deg, #0F1419, #1a2332)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   fontSize: '4rem',
@@ -104,7 +117,7 @@ const About = () => {
                 <img 
                   src="/sandeep.jpg" 
                   alt="sandeep kumar singh" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} 
                 />
               </div>
             </div>

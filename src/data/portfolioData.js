@@ -247,7 +247,7 @@ export const achievements = [
 export const testimonials = [
   {
     id: 1,
-    quote: "Vikash's backend development skills are exceptional. He delivered clean, optimized APIs ahead of schedule.", // TODO: Get real testimonials
+    quote: "Sandeep's backend development skills are exceptional. He delivered clean, optimized APIs ahead of schedule.", // TODO: Get real testimonials
     name: "John Doe",
     role: "CTO",
     company: "Xorvo Technologies",
@@ -255,7 +255,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    quote: "Working with Vikash was a great experience. His MERN stack knowledge and problem-solving skills are impressive.",
+    quote: "Working with Sandeep was a great experience. His MERN stack knowledge and problem-solving skills are impressive.",
     name: "Jane Smith",
     role: "Product Manager",
     company: "Tech Startup",
@@ -263,7 +263,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    quote: "Vikash built our entire e-commerce platform in record time. The code quality and attention to detail was outstanding.",
+    quote: "Sandeep built our entire e-commerce platform in record time. The code quality and attention to detail was outstanding.",
     name: "Alex Johnson",
     role: "Founder",
     company: "E-Commerce Startup",

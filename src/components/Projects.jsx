@@ -27,6 +27,7 @@ const ProjectCard = ({ project, index }) => {
       transition={{ delay: index * 0.1, duration: 0.5 }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
+      onClick={() => setHovered(!hovered)}
       style={{
         borderColor: hovered ? 'rgba(16,185,129,0.5)' : 'rgba(255,255,255,0.07)',
         boxShadow: hovered ? '0 0 30px rgba(16,185,129,0.2)' : 'none',
@@ -80,6 +81,7 @@ const ProjectCard = ({ project, index }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
+                onClick={(e) => e.stopPropagation()}
                 style={{
                   display: 'flex', alignItems: 'center', gap: '0.4rem',
                   padding: '0.55rem 1rem',
@@ -99,6 +101,7 @@ const ProjectCard = ({ project, index }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
+                onClick={(e) => e.stopPropagation()}
                 style={{
                   display: 'flex', alignItems: 'center', gap: '0.4rem',
                   padding: '0.55rem 1rem',

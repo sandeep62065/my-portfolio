@@ -9,8 +9,8 @@ export const projects = [
     image: null, // TODO: Add project screenshot
     category: "Full Stack",
     tech: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Tailwind"],
-    github: "https://github.com/Vikash-Sharma-45/Cal-Ai", // TODO: Replace
-    demo: "https://cal-ai-irk8.vercel.app/#/onboarding", // TODO: Replace
+    github: "https://github.com/sandeep62065/CAL-Ai", // TODO: Replace
+    demo: "https://cal-ai-eosin.vercel.app", // TODO: Replace
     featured: true,
   },
   {

@@ -26,13 +26,13 @@ export const projects = [
   },
   {
     id: 3,
-    title: "SukoonAI",
-    description: "SukoonAI is an AI-powered mental health support platform developed as a team project, aimed at providing accessible and empathetic emotional assistance. The platform offers real-time AI-driven conversations, personalized wellness suggestions, and a secure, user-friendly experience to support mental well-being anytime, anywhere.",
+    title: "FoodieHub",
+    description: "A full stack food ordering web app with real time features and animations",
     image: null,
     category: "Full Stack",
     tech: ["React", "Redux", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/Vikash-Sharma-45/Sukoon-Ai-Backend",
-    demo: "https://sukoon-ai-kttc.vercel.app",
+    github: "https://github.com/sandeep62065/food_hub",
+    demo: "https://food-hub-m8gz.vercel.app/",
     featured: true,
   },
   {

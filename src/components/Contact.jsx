@@ -49,7 +49,6 @@ const Contact = () => {
     fontSize: '0.95rem',
     outline: 'none',
     transition: 'border-color 0.3s',
-    background: 'transparent',
   };
 
   const socials = [

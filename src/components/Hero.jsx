@@ -92,8 +92,10 @@ const Hero = () => {
       if (roleText.length > 0) {
         timeout = setTimeout(() => setRoleText(roleText.slice(0, -1)), 45);
       } else {
-        setIsDeleting(false);
-        setRoleIndex((roleIndex + 1) % roles.length);
+        timeout = setTimeout(() => {
+          setIsDeleting(false);
+          setRoleIndex((roleIndex + 1) % roles.length);
+        }, 10);
       }
     }
     return () => clearTimeout(timeout);
